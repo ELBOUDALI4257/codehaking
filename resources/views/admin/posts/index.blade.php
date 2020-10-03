@@ -25,7 +25,7 @@
                 <tr>
                     <td> {{$post->id}}</td>
                     <td> {{$post->user->name}}</td>
-                    <td> {{$post->category_id}}</td>
+                    <td> {{$post->category->name}}</td>
                     <td><img class="img-circle" height="50" src="{{ $post->photo->file}}" alt=""></td>
                     <td><a href="{{route('admin.posts.edit' , $post->id )}}">{{ $post->title}}</a></td>
                     <td>{{ $post->body}}</td>
